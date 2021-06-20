@@ -1,0 +1,28 @@
+{
+  "name": "webservice-wsdl",
+  "version": "1.0.0",
+  "description": "Web service wsdl - Node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dperea10/webService-wsdl.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dperea10/webService-wsdl/issues"
+  },
+  "homepage": "https://github.com/dperea10/webService-wsdl#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.0",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "soap": "^0.39.0"
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <foot:GameScore>
+         <foot:iGameNumber>1</foot:iGameNumber>
+      </foot:GameScore>
+   </soapenv:Body>
+</soapenv:Envelope>
