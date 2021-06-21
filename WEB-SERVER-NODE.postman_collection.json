@@ -1,0 +1,284 @@
+{
+	"info": {
+		"_postman_id": "caacd3a5-cc4c-46ef-bd59-f224f303349c",
+		"name": "WEB-SERVER-NODE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Game Score Result",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"iGameNumber\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_local}}/api/game-soccer/get-score-result",
+					"host": [
+						"{{url_local}}"
+					],
+					"path": [
+						"api",
+						"game-soccer",
+						"get-score-result"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Game Score Result",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"iGameNumber\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_local}}/api/game-soccer/get-score-result",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"api",
+								"game-soccer",
+								"get-score-result"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "345"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"159-rZpeqMgn+ryed32z0wFixzUo86A\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Jun 2021 23:38:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"GameScoreResult\": {\n        \"iGameNumber\": 3,\n        \"sDescription\": \"Match 3\",\n        \"dtLocalPlayDateTime\": \"2021-06-12 18:00:00.000\",\n        \"dtUTCPlayDateTime\": \"2021-06-12 16:00:00.000\",\n        \"sTeamName1\": \"Denmark\",\n        \"sTeamName2\": \"Finland\",\n        \"iScoreTeam1\": 0,\n        \"iScoreTeam2\": 1,\n        \"iRedCards\": 0,\n        \"iYellowCards\": 2,\n        \"sGroupCode\": \"B\",\n        \"bFinished\": true,\n        \"iPenaltiesWonTeam1\": 0,\n        \"iPenaltiesWonTeam2\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Results All Games",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"iGroupId\": 2,\n    \"iLevel\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_local}}/api/game-soccer/get-results-all-games",
+					"host": [
+						"{{url_local}}"
+					],
+					"path": [
+						"api",
+						"game-soccer",
+						"get-results-all-games"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Results All Games",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"iGroupId\": 2,\n    \"iLevel\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_local}}/api/game-soccer/get-results-all-games",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"api",
+								"game-soccer",
+								"get-results-all-games"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2006"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7d6-cakrJQDmRIfTbr7HyN+bB6jyfZY\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Jun 2021 23:37:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"ResultsAllGamesResult\": {\n        \"tGameResult\": [\n            {\n                \"iGameNumber\": 3,\n                \"sDescription\": \"Match 3\",\n                \"dtLocalPlayDateTime\": \"2021-06-12 18:00:00.000\",\n                \"dtUTCPlayDateTime\": \"2021-06-12 16:00:00.000\",\n                \"sTeamName1\": \"Denmark\",\n                \"sTeamName2\": \"Finland\",\n                \"iScoreTeam1\": 0,\n                \"iScoreTeam2\": 1,\n                \"iRedCards\": 0,\n                \"iYellowCards\": 2,\n                \"sGroupCode\": \"B\",\n                \"bFinished\": true,\n                \"iPenaltiesWonTeam1\": 0,\n                \"iPenaltiesWonTeam2\": 0\n            },\n            {\n                \"iGameNumber\": 4,\n                \"sDescription\": \"Match 4\",\n                \"dtLocalPlayDateTime\": \"2021-06-12 22:00:00.000\",\n                \"dtUTCPlayDateTime\": \"2021-06-12 19:00:00.000\",\n                \"sTeamName1\": \"Belgium\",\n                \"sTeamName2\": \"Russia\",\n                \"iScoreTeam1\": 3,\n                \"iScoreTeam2\": 0,\n                \"iRedCards\": 0,\n                \"iYellowCards\": 0,\n                \"sGroupCode\": \"B\",\n                \"bFinished\": true,\n                \"iPenaltiesWonTeam1\": 0,\n                \"iPenaltiesWonTeam2\": 0\n            },\n            {\n                \"iGameNumber\": 15,\n                \"sDescription\": \"Match 15\",\n                \"dtLocalPlayDateTime\": \"2021-06-16 16:00:00.000\",\n                \"dtUTCPlayDateTime\": \"2021-06-16 13:00:00.000\",\n                \"sTeamName1\": \"Finland\",\n                \"sTeamName2\": \"Russia\",\n                \"iScoreTeam1\": 0,\n                \"iScoreTeam2\": 1,\n                \"iRedCards\": 0,\n                \"iYellowCards\": 5,\n                \"sGroupCode\": \"B\",\n                \"bFinished\": true,\n                \"iPenaltiesWonTeam1\": 0,\n                \"iPenaltiesWonTeam2\": 0\n            },\n            {\n                \"iGameNumber\": 16,\n                \"sDescription\": \"Match 16\",\n                \"dtLocalPlayDateTime\": \"2021-06-17 18:00:00.000\",\n                \"dtUTCPlayDateTime\": \"2021-06-17 16:00:00.000\",\n                \"sTeamName1\": \"Denmark\",\n                \"sTeamName2\": \"Belgium\",\n                \"iScoreTeam1\": 1,\n                \"iScoreTeam2\": 2,\n                \"iRedCards\": 0,\n                \"iYellowCards\": 4,\n                \"sGroupCode\": \"B\",\n                \"bFinished\": true,\n                \"iPenaltiesWonTeam1\": 0,\n                \"iPenaltiesWonTeam2\": 0\n            },\n            {\n                \"iGameNumber\": 27,\n                \"sDescription\": \"Match 27\",\n                \"dtLocalPlayDateTime\": \"2021-06-21 21:00:00.000\",\n                \"dtUTCPlayDateTime\": \"2021-06-21 19:00:00.000\",\n                \"sTeamName1\": \"Russia\",\n                \"sTeamName2\": \"Denmark\",\n                \"iScoreTeam1\": 0,\n                \"iScoreTeam2\": 0,\n                \"iRedCards\": 0,\n                \"iYellowCards\": 0,\n                \"sGroupCode\": \"B\",\n                \"bFinished\": false,\n                \"iPenaltiesWonTeam1\": 0,\n                \"iPenaltiesWonTeam2\": 0\n            },\n            {\n                \"iGameNumber\": 28,\n                \"sDescription\": \"Match 28\",\n                \"dtLocalPlayDateTime\": \"2021-06-21 22:00:00.000\",\n                \"dtUTCPlayDateTime\": \"2021-06-21 19:00:00.000\",\n                \"sTeamName1\": \"Finland\",\n                \"sTeamName2\": \"Belgium\",\n                \"iScoreTeam1\": 0,\n                \"iScoreTeam2\": 0,\n                \"iRedCards\": 0,\n                \"iYellowCards\": 0,\n                \"sGroupCode\": \"B\",\n                \"bFinished\": false,\n                \"iPenaltiesWonTeam1\": 0,\n                \"iPenaltiesWonTeam2\": 0\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Team Names",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/game-soccer/get-score-result",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"game-soccer",
+						"get-score-result"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Team Names",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_local}}/api/game-soccer/get-team-names",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"api",
+								"game-soccer",
+								"get-team-names"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "287"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"11f-qq8h2PiQ5prbBuN1otAe5/SrccU\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Jun 2021 23:40:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"TeamNamesResult\": {\n        \"string\": [\n            \"Austria\",\n            \"Belgium\",\n            \"Croatia\",\n            \"Czech Republic\",\n            \"Denmark\",\n            \"England\",\n            \"Finland\",\n            \"France\",\n            \"Germany\",\n            \"Hungary\",\n            \"Italy\",\n            \"Netherlands\",\n            \"North Macedonia\",\n            \"Poland\",\n            \"Portugal\",\n            \"Russia\",\n            \"Scotland\",\n            \"Slovakia\",\n            \"Spain\",\n            \"Sweden\",\n            \"Switzerland\",\n            \"Turkey\",\n            \"Ukraine\",\n            \"Wales\"\n        ]\n    }\n}"
+				}
+			]
+		}
+	]
+}
