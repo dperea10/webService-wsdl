@@ -40,16 +40,22 @@ _Una serie de ejemplos paso a paso que te dice lo que debes configurar para tene
 _1. Después de realizar la instalación se explica un poco la configuración_
 
 ![Configurar ENV]
-
+[https://github.com/dperea10/webService-wsdl/blob/main/configuraci%C3%B3n/configurarENV]
 
 _3. importar la collection de postman adjunto en el proyecto_
 ![Configurar Postman]
-
+[https://github.com/dperea10/webService-wsdl/blob/main/configuraci%C3%B3n/importarPOSTMAN]
+[https://github.com/dperea10/webService-wsdl/blob/main/configuraci%C3%B3n/ejemploPOSTMAN]
 
 
 _4. Realizar pruebas del consumo de los servicios_
 ![Pruebas "Response"]
+[https://github.com/dperea10/webService-wsdl/blob/main/configuraci%C3%B3n/responseGameScoreResult]
+[https://github.com/dperea10/webService-wsdl/blob/main/configuraci%C3%B3n/ResponseTeamNamesResult]
+[https://github.com/dperea10/webService-wsdl/blob/main/configuraci%C3%B3n/ResponseResultAllGame]
 
+
+_Extra: También hay un DockerFile para correr el proyecto en un contenedor con las mismas funcionalidades ya descritas_.
 
 ## Construido con 🛠️
 
@@ -57,7 +63,7 @@ NODEJS, EXPRESS, y una que otras librerías que se ven instaladas en el package.
 
 ## Autores ✒️
 
-* **Diego Perea** 
+* **Diego Perea**
 
 ## Licencia 📄
 
